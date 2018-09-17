@@ -7,21 +7,26 @@
 <body>
 	% include('haus.tpl')
 
-	<div>
-		<section class="row">
+	<div class="group">
+		<section class="col1_2">
 			<h3>Hurricane florence</h3>
-			<img src="/static/florence_1.gif">			
+			<img src="/static/florence_1.gif">
+			<br>
+			<br>
 		</section>
-		<section class="row">
+		<section class="col1_2">
 			<h3>Helstu fréttir</h3>
 			<ul>
-				<li><a href="/frett/0">Hurricane florence</a></li>
-				<li><a href="/frett/1">Hurricane florence orðinn að Category 2</a></li>
-				<li><a href="/frett/2">Af hverju er ég veikur?1?</a></li>
+		    % cnt = 0
+			% for i in frettir:
+				<li><a href="/frett/{{ cnt }}">{{ i[0] }}</a></li>
+				% cnt += 1
+			%end
+
 			</ul>
 		</section>		
 	</div>
-	<div class="fotur">
+	<div class="fotur group">
 		<link rel="stylesheet" href="/static/main.css">
 		% include('fotur.tpl')
 	</div>

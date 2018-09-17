@@ -14,23 +14,10 @@ body{
 	border-radius: 5px;
 	text-align: center;
 }
-.row{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
 
-.row section{
-	border: 2px solid black;
-}
 .col1_2{
 	float: left;
 	width: 50%;
-}
-.col1_1{
-	float: left;
-	border:0.3px solid;
-	border-radius: 5px;
-	text-align: center;
 }
 
 img{

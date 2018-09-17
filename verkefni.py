@@ -27,7 +27,7 @@ def page(kt):
 
 @route('/b')
 def about():
-        return template("index.tpl")
+        return template("index.tpl", frettir=frettir)
 
 @route('/frett/<id:int>')
 def page(id):

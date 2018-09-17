@@ -7,7 +7,7 @@
 <body>
 	% include('haus.tpl')
 
-	<div>
+	<div class="group">
 		<section class="col1_2">
 			<h3>{{ fyrirsogn }}</h3>
 			<img src="/static/{{ mynd }}">
