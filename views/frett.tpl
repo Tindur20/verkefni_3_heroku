@@ -18,7 +18,7 @@
 			<h3>{{ fyrirsogn }}</h3>
 			<p>{{ frett }}</p>
 			<h6>{{ hofundur }}</h6>
-			<a href="/b"></a>
+			<a href="/b">Til baka</a>
 		</section>
 	</div>
 
